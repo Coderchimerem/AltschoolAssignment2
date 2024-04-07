@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        
+        text-align: center;
+      
+    }
+    .myname {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: beige;
+    }
+    .aboutme {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: antiquewhite;
+
+    }
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: normal;
+    background:azure;
+   }
+   .goal {
+    background-color: blanchedalmond;
+    font-family:'Courier New', Courier, monospace;
+   }
+   label {
+    margin: 15px;
+   }
+   input[type = submit] {
+    margin: 20px;
+    cursor: pointer;
+   }
+</style>
+
+<body>
+<div>
+    <h1 class="myname">Hello Friends. My name is Chimerem <br> Obiajulu Anaege</h1> 
+</div>
+
+    <hr>
+
+<div class="aboutme">
+        <h2 class="about">ABOUT ME</h2>
+        <p>I am an aspiring developer passionate about becoming <br> a Master of JavaScript and using it to solve problems.</p>
+</div>
+
+    <hr>
+
+<div class="goal">
+     
+     <h3>My goal in this diploma course are as follows:</h3>
+     <p>To learn Backend development and become good at it.</p>
+     <p>To meet new friends and grow with them.</p>
+     <p>To solidify my foundation in tech with a reputable learning platform ie Alt school.</p>
+</div>
+
+    <hr>
+<div class="grid">
+<div class="myeduc">
+    <h2>EDUCATION</h2> 
+    <p>Primary school - Imo State University Primary School.</p>
+    <p>Secondary school - Government Secondary School Owerri</p>
+    <p>University School - Michael Okpara University of Agriculture.</p>
+</div>
+   
+<div class="myjob">
+    <h2>JOB EXPERIENCES</h2>
+     <p>No job experiences for now</p>
+</div>
+
+<div class="myhobbies">
+    <h2>HOBBIES</h2>
+    <p>Chess playing</p>
+    <p>Singing</p>
+</div>
+
+<div class="others">
+    <h2 class="otherskill">OTHER SKILLS</h2>
+    <p>Fashion, Multimedia skills etc.</p>
+</div>
+</div>
+
+   <form>
+    <h1>Fill in your details</h1>
+    <section>
+        <label for="fullname">Name: </label>
+    </section> 
+       <input id="fullname" type="text" required>
+    <section>
+        <label for="email">Email: </label> 
+    </section> 
+    <input id="email" type="email" required>
+    <section>
+        <label for="bio">Enter a message: </label>
+    </section>    
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Write a message..."></textarea>
+    <section>
+        <label for="gender">What is your gender?</label>
+        <select name="gender" id="gender">
+            <option value="">Select an option</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+        </select>
+    </section>  
+        <input type="submit" value="Submit">
+</form>
+
+<a href="./calculator.html">Calculator</a>
+
+
+</body>
+</html>
